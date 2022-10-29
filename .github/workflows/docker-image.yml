@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jpsexample:$(date +%s)
+      run: docker build . --file Dockerfile --tag jpsexample
+    - name: run docker
+      run: docker run --rm jpsexample "game comm2 --iter 100 --iter_cfr 1000"
