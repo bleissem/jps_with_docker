@@ -1,1 +1,1 @@
-docker run -it --rm jpsexample bash
+docker run -it --rm jpsexample "game comm2 --iter 100 --iter_cfr 1000"
